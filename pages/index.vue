@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Welcome to Chinjaorose!</h1>
+    <h1>Welcome to Paprika!</h1>
     <bpa-button theme="primary">I am so excited!</bpa-button>
   </div>
 </template>

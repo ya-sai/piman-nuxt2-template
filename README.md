@@ -1,4 +1,4 @@
-# Chinjaorose
+# Paprika
 
 A Nuxt template of Piman  
 
