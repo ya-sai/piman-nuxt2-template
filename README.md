@@ -2,10 +2,13 @@
 
 A Nuxt template of Piman  
 
+
 ## How to use
 
 - Just copy and paste all files to your folder
+- npm install
 - npm run dev  
+
 
 ## CSS Folder Structure
 
@@ -26,6 +29,7 @@ scss/
 ├── plugins/  
 ├───├── \_core.scss  
 ├── style.scss
+
 
 ## Version
 
