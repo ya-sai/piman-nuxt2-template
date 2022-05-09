@@ -28,3 +28,5 @@ scss/
 ├── style.scss
 
 ## Version
+
+Follow [Piman](https://github.com/ya-sai/piman)
