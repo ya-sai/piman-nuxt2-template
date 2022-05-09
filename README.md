@@ -4,7 +4,7 @@ A Nuxt template of Piman
 
 ## How to use
 
-- Just copy and paste all files  
+- Just copy and paste all files to your folder
 - npm run dev  
 
 ## CSS Folder Structure
