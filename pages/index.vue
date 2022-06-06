@@ -1,7 +1,10 @@
 <template>
   <div class="container">
+    <br>
     <h1>Welcome to Paprika!</h1>
-    <bpa-button theme="primary">I am so excited!</bpa-button>
+    <p>This is a nuxt template of piman.</p>
+    <p>Hope you enjoy it!</p>
+    <bpa-button theme="primary">Button</bpa-button>
   </div>
 </template>
 

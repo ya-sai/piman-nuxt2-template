@@ -3,7 +3,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - ' + process.env.WEBSITE_NAME,
-    title: '首頁',
+    title: 'page title',
     htmlAttrs: {
       lang: 'zh-Hant-TW'
     },
@@ -11,9 +11,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.WEBSITE_DESCRIPTION },
-      { hid: 'keywords', name: 'keywords', content: '專案關鍵字' },
-      { name: 'author', content: '專案作者' },
-      { name: 'copyright', content: 'Copyright 資訊' },
+      { hid: 'keywords', name: 'keywords', content: 'keywords' },
+      { name: 'author', content: 'author' },
+      { name: 'copyright', content: 'copyright' },
       { name: 'format-detection', content: 'telephone=no' },
       
       // social media
@@ -85,7 +85,6 @@ export default {
   plugins: [
     '@/plugins/apis',
     '@/plugins/piman',
-    { src: '@/plugins/html2canvas', mode: 'client' },
     { src: '@/plugins/axios/server', mode: 'server' }
   ],
 
