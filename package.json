@@ -18,8 +18,6 @@
     "@nuxtjs/composition-api": "^0.30.0",
     "@yasai/piman": "^1.0.0-alpha.27",
     "async-validator": "^4.0.7",
-    "canvg": "^3.0.9",
-    "html2canvas": "^1.3.2",
     "nuxt": "^2.15.8"
   },
   "devDependencies": {

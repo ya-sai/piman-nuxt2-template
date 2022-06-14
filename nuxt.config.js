@@ -121,9 +121,6 @@ export default {
     parallel: false,
     hardSource: false,
     indicator: false,
-    transpile:[
-      'canvg'
-    ],
     extend(config, ctx) {}
   },
 
