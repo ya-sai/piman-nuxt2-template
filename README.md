@@ -7,7 +7,7 @@ A Nuxt template of Piman
 ## How to use
 
 - Just copy and paste all files to your folder
-- npm install
+- npm 
 - npm run dev  
 
 
