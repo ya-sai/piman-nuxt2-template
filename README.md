@@ -4,6 +4,8 @@ A Nuxt template of Piman
 
 ![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/Nuxt/2.x/green) ![image](https://badgen.net/badge/Piman/1.x/green)  ![image](https://badgen.net/badge/npm/v16/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange)
 
+[node.js version link](https://nodejs.org/zh-tw/download/releases/)
+
 ## How to use
 
 - Just copy and paste all files to your folder
