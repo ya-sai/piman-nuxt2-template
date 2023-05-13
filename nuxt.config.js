@@ -76,7 +76,7 @@ export default {
   // Global CSS for components use
   styleResources: {
     scss: [
-      '@/piman/src/assets/scss/_variables.scss',
+      '~/node_modules/@yasai/piman/src/assets/scss/base/_variables.scss',
       '@/assets/scss/base/_variables.scss'
     ]
   },
