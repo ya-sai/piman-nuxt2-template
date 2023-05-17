@@ -112,7 +112,7 @@ table {
     background-color: lighten($color-primary, 40%);
     word-break: break-all;
     word-break: break-word;
-    @media screen and(max-width: nth($breakpoint, 2)){
+    @media screen and (max-width: nth($breakpoint, 2)){
       padding: 0.25rem 0.5rem;
     }
   }
@@ -124,7 +124,7 @@ table {
     padding: 0.5rem 1rem;
     word-break: break-all;
     word-break: break-word;
-    @media screen and(max-width: nth($breakpoint, 2)){
+    @media screen and (max-width: nth($breakpoint, 2)){
       padding: 0.25rem 0.5rem;
     }
   }

@@ -1,6 +1,6 @@
 {
   "name": "@yasai/paprika",
-  "version": "1.0.0-alpha.30",
+  "version": "1.0.0-alpha.32",
   "description": "A Nuxt template of Piman",
   "author": "Blueplanet Inc.",
   "private": true,
@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/composition-api": "^0.30.0",
-    "@yasai/piman": "^1.0.0-alpha.30",
+    "@nuxtjs/composition-api": "~0.23.4",
+    "@yasai/piman": "^1.0.0-alpha.32",
     "async-validator": "^4.0.7",
-    "nuxt": "^2.15.8"
+    "nuxt": "~2.15.8"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
