@@ -94,7 +94,8 @@ export default {
     '@nuxt/typescript-build',
     // '@nuxtjs/router'
     '@nuxtjs/style-resources',
-    '@nuxtjs/composition-api/module'
+    '@nuxtjs/composition-api/module',
+    '@nuxt/postcss8'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
