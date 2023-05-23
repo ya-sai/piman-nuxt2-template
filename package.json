@@ -2,7 +2,7 @@
   "name": "@yasai/paprika",
   "version": "1.0.0-alpha.32",
   "description": "A Nuxt template of Piman",
-  "author": "Blueplanet Inc.",
+  "author": "Blue Planet Inc.",
   "private": true,
   "scripts": {
     "dev": "cross-env nuxt",
