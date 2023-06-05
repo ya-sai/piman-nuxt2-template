@@ -1,3 +1,7 @@
+/*************************
+  Papper
+*************************/
+
 @media print {
   @page{
     size: A4 portrait;
@@ -37,6 +41,11 @@
     page-break-before: avoid;
   }
 }
+
+
+/*************************
+  Color
+*************************/
 
 @media print and (color){
   * {

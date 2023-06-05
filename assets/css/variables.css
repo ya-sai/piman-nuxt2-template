@@ -1,0 +1,52 @@
+:root {
+
+  /* Base Colors(oklch) */
+  --color-black: 24.78% 0 0;
+  --color-white: 100% 0 0;
+
+  /*
+    Theme Colors(oklch)
+    If oklch(from color-number l c h / alpha) can work:
+    1. change --color-primary to oklch(70% 0.1 188) and change other file.
+    2. delete --color-primary-light
+    3. change oklch(var(--color-primary-light)) to oklch(from var(--color-primary) l c h / 40%)
+  */
+  --color-primary: 70% 0.1 188;
+  --color-primary-light: 90% 0.1 188;
+  --color-success: 79.21% 0.153 117.53;
+  --color-warning: 70% 0.222 41.29;
+  --color-danger: 56.18% 0.227 24.35;
+  --color-visited: 51% 0.2 283.95;
+  
+  
+  /* Outline */
+  --outline-color: 83% 0.17 82.04;
+
+  /* Breakpint */
+  --breakpoint-560: 560px;
+  --breakpoint-768: 768px;
+  --breakpoint-960: 960px;
+  --breakpoint-1280: 1280px;
+  --breakpoint-1440: 1440px;
+  --breakpoint-1600: 1600px;
+  --breakpoint-1920: 1920px;
+
+  /* Border */
+  --border-color: 79.21% 0 0;
+
+  /* Font */
+  --font-size-base: 1rem;
+  --font-family: 'helvatica', 'Arial', sans-serif;
+
+  /* Box-shadow */
+  --box-shadow: 0 0.75rem 1.125rem oklch(var(--color-black) / 15%);
+
+   /* Header */
+  --header-bg: var(--color-white);
+
+  /* Menu */
+  --menubar-mobile-bg: var(--color-white);
+
+  /* Footer */
+  --footer-bg: var(--color-black);
+}
