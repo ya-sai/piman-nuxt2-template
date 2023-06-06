@@ -128,6 +128,9 @@ header {
     @media screen and (max-width: 768px) {
       padding: 0 1rem;
     }
+    & a {
+      display: inline-block;
+    }
   }
 
   & .menubar {
