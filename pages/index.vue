@@ -5,8 +5,37 @@
     <p>This is a nuxt template of piman.</p>
     <p>Hope you enjoy it!</p>
     <bpa-button theme="primary">Button</bpa-button>
+    <bpa-dropdown
+      v-model="menuDropdown1"
+      :options="menuDropdownOptions1"
+      placeholder="產品數位履歷"
+    />
+
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent, ref, computed, watch } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  setup(_, {root}) {
+
+    const menuDropdown1 = ref("");
+    const menuDropdownOptions1 =  [
+      { 
+        type: "link",
+        url: "/sitemap",
+        label: "平台介紹" 
+      },
+    ]
+
+    return {
+      menuDropdown1, menuDropdownOptions1
+    }
+  },
+})
+</script>
+
 
 <style lang="scss" scoped>
   .container {
