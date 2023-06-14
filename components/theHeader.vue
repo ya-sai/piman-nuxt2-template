@@ -189,7 +189,6 @@ header {
       width: 300px;
       height: 100dvh;
       background-color: oklch(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
-      box-shadow: var(--box-shadow);
       padding: 1rem;
       overflow: auto;
       scroll-behavior: smooth;
@@ -211,6 +210,7 @@ header {
   }
   .menu--open {
     @media screen and (max-width: 768px) {
+      box-shadow: var(--box-shadow);
       transform: translate3d(-100%, 0, 0);
     }
   }
