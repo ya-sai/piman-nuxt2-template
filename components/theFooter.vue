@@ -62,14 +62,19 @@
 
 <style scoped>
 footer {
-  background-color: oklch(var(--footer-bg));
-  color: oklch(var(--color-white));
+  --footer-bg-default: 24.78% 0 0;
+  --footer-color-default: 100% 0 0;
+  --footer-link-color-default: 100% 0 0;
+  --footer-border-color-default: 79.21% 0 0;
+
+  background-color: oklch(var(--footer-bg, var(--footer-bg-default)));
+  color: oklch(var(--footer-color, var(--footer-color-default)));
   & .footer-container {
     display: flex;
     justify-content: space-around;
     gap: 1.5rem;
     width: 100%;
-    max-width: var(--breakpoint-1280);
+    max-width: var(--breakpoint-1280, 1280);
     margin: 0 auto;
     padding: 0 1rem;
     @media screen and (max-width: 768px) {
@@ -79,13 +84,13 @@ footer {
     & a {
       text-decoration: underline;
       text-decoration-style: dotted;
-      color: oklch(var(--color-white));
+      color: oklch(var(--footer-link-color, var(--footer-link-color-default)));
     }
   }
   & .footer-footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-top: 1px solid oklch(var(--border-color) / 30%);
+    border-top: 1px solid oklch(var(--footer-border-color, var(--footer-border-color-default)) / 30%);
     text-align: center;
   }
 }

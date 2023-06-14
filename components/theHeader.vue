@@ -94,10 +94,15 @@ const handleCloseMobileMenuBtn = () => {
 
 <style scoped>
 header {
+  --header-bg-default: 100% 0 0;
+  --header-border-color-default: 79.21% 0 0;
+  --skip-btn-color-default: 100% 0 0;
+  --skip-btn-bg--default: 24.78% 0 0;
+  --menubar-mobile-bg-default: 24.78% 0 0;
   position: sticky;
   top: 0;
-  background-color: oklch(var(--header-bg) / 90%);
-  border-bottom: 1px solid oklch(var(--border-color) / 30%);
+  background-color: oklch(var(--header-bg, var(--header-bg-default)) / 90%);
+  border-bottom: 1px solid oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
   backdrop-filter: blur(0.25rem);
   z-index: 1;
   & #ak-jump {
@@ -108,8 +113,8 @@ header {
     color: transparent;
     z-index: -1;
     &:focus-within {
-      color: oklab(var(--color-white));
-      background-color: oklab(var(--color-black));
+      color: oklab(var(--skip-btn-color, var(--skip-btn-color-default)));
+      background-color: oklab(var(--skip-btn-bg, var(--skip-btn-bg--default)));
       z-index: inherit;
     }
   }
@@ -138,7 +143,7 @@ header {
     white-space: nowrap;
     overflow: auto;
     background:
-      linear-gradient(to right, oklch(var(--header-bg) / 90%) 30%,  oklch(var(--color-black) / 0%)),
+      linear-gradient(to right, oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,  oklch(var(--color-black) / 0%)),
       linear-gradient(to right, oklch(var(--color-black) / 0%), oklch(var(--header-bg) / 90%) 70%),
       radial-gradient(farthest-side at 0 50%, oklch(var(--color-black) / 20%), transparent),
       radial-gradient(farthest-side at 100% 50%, oklch(var(--color-black) / 20%), transparent);
@@ -164,7 +169,6 @@ header {
   }
   & .btn-close-mobile-menu {
     display: none;
-    background-color: red;
     @media screen and (max-width: 768px) {
       display: block;
     }
@@ -198,7 +202,7 @@ header {
       right: 0;
       width: 300px;
       height: 100dvh;
-      background-color: oklch(var(--menubar-mobile-bg));
+      background-color: oklch(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
       box-shadow: var(--box-shadow);
       padding: 1rem;
       overflow: auto;

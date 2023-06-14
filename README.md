@@ -13,9 +13,6 @@ A Nuxt3 template of Piman(開發中)
 - npx nuxi dev  
 
 
-## CSS Folder Structure  
-
-
 ## Version and License  
 
 Follow [Piman](https://github.com/ya-sai/piman)  

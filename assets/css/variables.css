@@ -43,10 +43,19 @@
 
    /* Header */
   --header-bg: var(--color-white);
+  --header-border-color: var(--border-color);
+  --skip-btn-color: var(--color-white);
+  --skip-btn-bg: var(--color-black);
 
   /* Menu */
   --menubar-mobile-bg: var(--color-white);
 
   /* Footer */
   --footer-bg: var(--color-black);
+  --footer-color: var(--color-white);
+  --footer-link-color: var(--color-white);
+  --footer-border-color: var(--border-color);
+
+  /* Empty Block */
+  --empty-block-border-color: var(--color-primary);
 }
