@@ -182,7 +182,21 @@ header {
     gap: 1.5rem;
     padding: 1rem 0 1rem 2rem;
     @media screen and (max-width: 768px) {
-      display: none;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 300px;
+      height: 100dvh;
+      background-color: oklch(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
+      box-shadow: var(--box-shadow);
+      padding: 1rem;
+      overflow: auto;
+      scroll-behavior: smooth;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      transform: translate3d(0, 0, 0);
+      transition: transform 300ms ease-out;
     }
     & ul {
       display: flex;
@@ -197,19 +211,7 @@ header {
   }
   .menu--open {
     @media screen and (max-width: 768px) {
-      display: block;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 100dvh;
-      background-color: oklch(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
-      box-shadow: var(--box-shadow);
-      padding: 1rem;
-      overflow: auto;
-      scroll-behavior: smooth;
-      overscroll-behavior: contain;
-      -webkit-overflow-scrolling: touch;
+      transform: translate3d(-100%, 0, 0);
     }
   }
   & .sub-menu {
