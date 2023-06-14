@@ -127,6 +127,7 @@ figcaption {
   color: var(--color-black);
   padding: 1rem;
   box-shadow: 0 0.25rem 1rem oklch(var(--color-black) / 12%);
+  z-index: 9999;
 }
 
 .loading {
