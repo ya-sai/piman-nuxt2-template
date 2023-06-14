@@ -29,7 +29,7 @@
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/sitemap" title="前往網站導覽">網站導覽</nuxt-link>
+                <nuxt-link to="/sitemap" title="前往網站導覽"  @click="handleToggleMobileMenuBtn">網站導覽</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
@@ -159,6 +159,7 @@ header {
       justify-content: flex-end;
       align-items: center;
       padding: 0.75rem 1rem;
+      white-space: inherit;
     }
   }
   & .btn-open-mobile-menu {
