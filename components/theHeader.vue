@@ -32,7 +32,7 @@
                 <nuxt-link to="/sitemap" title="前往網站導覽"  @click="handleToggleMobileMenuBtn">網站導覽</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/" title="XXX">XXX</nuxt-link>
+                <nuxt-link to="/nested-pages" title="前往巢狀頁面範例"  @click="handleToggleMobileMenuBtn">巢狀頁面範例</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
