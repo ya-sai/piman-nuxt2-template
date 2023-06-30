@@ -23,6 +23,7 @@
   --outline-color: 83% 0.17 82.04;
 
   /* Breakpint */
+  --breakpoint-375: 375px;
   --breakpoint-560: 560px;
   --breakpoint-768: 768px;
   --breakpoint-960: 960px;

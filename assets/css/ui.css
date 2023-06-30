@@ -30,26 +30,32 @@ h6 {
 
 h1 {
   font-size: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
   font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 h5 {
   font-size: 0.875rem;
+  margin-bottom: 1rem;
 }
 
 h6 {
   font-size: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -67,6 +73,9 @@ a {
   }
   &:visited {
     color: oklch(var(--color-visited));
+  }
+  &[role="button"] {
+    text-decoration: none;
   }
 }
 
@@ -121,6 +130,41 @@ figcaption {
   margin-bottom: 0.5rem;
 }
 
+
+/*************************
+  Layout
+*************************/
+
+.layout {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+
+/*************************
+  Page
+*************************/
+
+[id^='ak-'] {
+  text-decoration: none;
+}
+
+#ak-jump {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-size: 0.875rem;
+  color: transparent;
+  z-index: -1;
+  &:focus-within {
+    color: oklab(var(--skip-btn-color, var(--skip-btn-color-default)));
+    background-color: oklab(var(--skip-btn-bg, var(--skip-btn-bg--default)));
+    z-index: inherit;
+  }
+}
+
 .noscript {
   position: fixed;
   top: 1rem;
@@ -165,23 +209,6 @@ figcaption {
     animation: spin 2s linear infinite;
   }
 }
-
-
-/*************************
-  Layout
-*************************/
-
-.layout {
-  min-height: 100dvh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-}
-
-
-/*************************
-  Page
-*************************/
 
 .page {
   width: 100%;
