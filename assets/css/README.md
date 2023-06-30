@@ -20,7 +20,7 @@ Component 一般來說是不應該被更動且獨立的，所以 Component 的 c
 
 另外請注意寫在 Component 的 CSS Variables 需有預設值，以防沒有設定 CSS Variables，  
 也就是說，Component 的 CSS Variables 預設值，避免再使用 CSS Variables 代替，才能達到獨立性。  
-例如：請謝 color: var(--color, red); 不要寫 color: var(--color, var(--color-default));  
+例如：請寫 color: var(--color, red); 不要寫 color: var(--color, var(--color-default));  
 
 如果不想修改原始檔但想方便覆蓋第三方的 css，請建立一個檔案並 @import 放入 vendor layer 中，  
 如果需要修改原始檔，則請複製貼上 第三方 css 至 vendor.css 裡修改。  
