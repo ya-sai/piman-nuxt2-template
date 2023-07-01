@@ -96,7 +96,7 @@ table {
     border-right: 1px solid oklch(var(--border-color));
     background-color: oklch(var(--color-primary-light));
     word-break: break-word;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       padding: 0.25rem 0.5rem;
     }
   }
@@ -107,7 +107,7 @@ table {
     border-right: 1px solid oklch(var(--border-color));
     padding: 0.5rem 1rem;
     word-break: break-word;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       padding: 0.25rem 0.5rem;
     }
   }
@@ -195,7 +195,7 @@ figcaption {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    @media screen and (max-width: 768px){
+    @media screen and (width <= 768px){
       padding-left: 10%;
       padding-right: 10%;
     }
@@ -217,7 +217,7 @@ figcaption {
   max-width: var(--breakpoint-1600);
   margin: 0 auto;
   padding: 2rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
     padding: 1rem;
   }
 }

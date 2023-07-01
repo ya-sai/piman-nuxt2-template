@@ -77,7 +77,7 @@ footer {
     max-width: var(--breakpoint-1280, 1280);
     margin: 0 auto;
     padding: 0 1rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       flex-direction: column;
       padding: 1rem;
     }

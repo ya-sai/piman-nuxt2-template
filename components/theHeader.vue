@@ -124,13 +124,13 @@ header {
   }
   & .btn-mobile {
     display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       display: block;
     }
   }
   & .logo {
     padding: 0 1rem 0 2rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       padding: 0 1rem;
     }
     & a {
@@ -154,7 +154,7 @@ header {
 
     /* Opera doesn't support this in the shorthand */
     background-attachment: local, local, scroll, scroll;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -164,13 +164,13 @@ header {
   }
   & .btn-open-mobile-menu {
     display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       display: block;
     }
   }
   & .btn-close-mobile-menu {
     display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       display: block;
     }
   }
@@ -181,7 +181,7 @@ header {
     align-items: center;
     gap: 1.5rem;
     padding: 1rem 0 1rem 2rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       display: block;
       position: fixed;
       top: 0;
@@ -200,7 +200,7 @@ header {
     & ul {
       display: flex;
       gap: 1.5rem;
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         flex-direction: column;
       }
     }
@@ -209,14 +209,14 @@ header {
     }
   }
   .menu--open {
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       box-shadow: var(--box-shadow);
       transform: translate3d(-100%, 0, 0);
     }
   }
   & .sub-menu {
     padding-right: 2rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       padding-right: 0;
       padding-top: 1rem;
       padding-bottom: 2rem;
