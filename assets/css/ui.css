@@ -61,6 +61,7 @@ h6 {
 a {
   color: oklch(var(--color-primary));
   transition: opacity 160ms ease-in;
+  text-decoration: underline;
   text-decoration-skip-ink: auto;
   &:hover {
     opacity: 0.6;
