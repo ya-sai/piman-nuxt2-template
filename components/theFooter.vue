@@ -62,11 +62,6 @@
 
 <style scoped>
 footer {
-  --footer-bg-default: 24.78% 0 0;
-  --footer-color-default: 100% 0 0;
-  --footer-link-color-default: 100% 0 0;
-  --footer-border-color-default: 79.21% 0 0;
-
   background-color: oklch(var(--footer-bg, var(--footer-bg-default)));
   color: oklch(var(--footer-color, var(--footer-color-default)));
   & .footer-container {
@@ -90,7 +85,8 @@ footer {
   & .footer-footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-top: 1px solid oklch(var(--footer-border-color, var(--footer-border-color-default)) / 30%);
+    border-top: 1px solid
+      oklch(var(--footer-border-color, var(--footer-border-color-default)) / 30%);
     text-align: center;
   }
 }

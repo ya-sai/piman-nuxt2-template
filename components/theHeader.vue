@@ -29,10 +29,17 @@
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/sitemap" title="前往網站導覽"  @click="handleToggleMobileMenuBtn">網站導覽</nuxt-link>
+                <nuxt-link to="/sitemap" title="前往網站導覽" @click="handleToggleMobileMenuBtn"
+                  >網站導覽</nuxt-link
+                >
               </li>
               <li>
-                <nuxt-link to="/nested-pages" title="前往巢狀頁面範例"  @click="handleToggleMobileMenuBtn">巢狀頁面範例</nuxt-link>
+                <nuxt-link
+                  to="/nested-pages"
+                  title="前往巢狀頁面範例"
+                  @click="handleToggleMobileMenuBtn"
+                  >巢狀頁面範例</nuxt-link
+                >
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
@@ -94,15 +101,11 @@ const handleCloseMobileMenuBtn = () => {
 
 <style scoped>
 header {
-  --header-bg-default: 100% 0 0;
-  --header-border-color-default: 79.21% 0 0;
-  --skip-btn-color-default: 100% 0 0;
-  --skip-btn-bg--default: 24.78% 0 0;
-  --menubar-mobile-bg-default: 24.78% 0 0;
   position: sticky;
   top: 0;
   background-color: oklch(var(--header-bg, var(--header-bg-default)) / 90%);
-  border-bottom: 1px solid oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
+  border-bottom: 1px solid
+    oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
   backdrop-filter: blur(0.25rem);
   z-index: 1;
   & #ak-jump {
@@ -142,8 +145,11 @@ header {
     flex: 1;
     white-space: nowrap;
     overflow: auto;
-    background:
-      linear-gradient(to right, oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,  oklch(var(--color-black) / 0%)),
+    background: linear-gradient(
+        to right,
+        oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,
+        oklch(var(--color-black) / 0%)
+      ),
       linear-gradient(to right, oklch(var(--color-black) / 0%), oklch(var(--header-bg) / 90%) 70%),
       radial-gradient(farthest-side at 0 50%, oklch(var(--color-black) / 20%), transparent),
       radial-gradient(farthest-side at 100% 50%, oklch(var(--color-black) / 20%), transparent);

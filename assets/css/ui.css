@@ -17,6 +17,8 @@ body {
 
 .wrapper {
   overflow-x: hidden;
+  background-color: oklch(var(--wrapper-bg));
+  color: oklch(var(--wrapper-color));
 }
 
 h1,
@@ -59,7 +61,7 @@ h6 {
 }
 
 a {
-  color: oklch(var(--color-primary));
+  color: oklch(var(--link-color));
   transition: opacity 160ms ease-in;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
@@ -89,12 +91,12 @@ table {
   border-top: 1px solid oklch(var(--border-color));
   border-left: 1px solid oklch(var(--border-color));
   width: 100%;
-  background-color: oklab(var(--color-white));
+  background-color: oklab(var(--table-bg));
   & th {
     padding: 0.5rem 1rem;
     font-weight: bold;
     border-right: 1px solid oklch(var(--border-color));
-    background-color: oklch(var(--color-primary-light));
+    background-color: oklch(var(--color-primary-modified));
     word-break: break-word;
     @media screen and (width <= 768px) {
       padding: 0.25rem 0.5rem;
@@ -117,7 +119,7 @@ kbd {
   display: inline-block;
   vertical-align: top;
   margin: 0 0.125rem 0.5rem;
-  border: 1px solid oklch(var(--color-black));
+  border: 1px solid oklch(var(--border-color));
   padding: 0 0.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.5rem oklch(var(--color-black) / 0.15);
@@ -172,9 +174,8 @@ figcaption {
   top: 1rem;
   left: calc(50% - 150px);
   width: 300px;
-  background-color: oklch(var(--color-white));
+  background-color: oklch(var(--noscript-bg));
   border-radius: 0.25rem;
-  color: var(--color-black);
   padding: 1rem;
   box-shadow: 0 0.25rem 1rem oklch(var(--color-black) / 12%);
   z-index: 9999;
