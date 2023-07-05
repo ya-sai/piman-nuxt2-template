@@ -28,6 +28,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -132,6 +133,7 @@ figcaption {
   font-size: 0.75em;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-wrap: balance;
 }
 
 
