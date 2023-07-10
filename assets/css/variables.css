@@ -3,10 +3,11 @@
   /* Base Colors(oklch) */
   --color-black: 24.78% 0 0;
   --color-white: 100% 0 0;
+  --color-gray: 40% 0 0;
 
    /* Font */
    --font-size-base: 1rem;
-   --font-family: 'helvetica', 'Arial', sans-serif;
+   --font-family: system-ui, Helvetica, Arial, sans-serif;
 
   /* Breakpint */
   --breakpoint-375: 375px;

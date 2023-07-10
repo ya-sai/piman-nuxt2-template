@@ -11,35 +11,23 @@
           </picture>
         </nuxt-link>
       </div>
-      <div class="menubar">
+      <div class="menubar" ref="checkScrollable">
         <button class="btn-open-mobile-menu" @click="handleToggleMobileMenuBtn">選單</button>
         <div :class="['menu', mobileMenuStatus ? 'menu--open' : '']">
           <button class="btn-close-mobile-menu" @click="handleCloseMobileMenuBtn">關閉選單</button>
+          <span class="visually-hidden" v-if="scrollHint">(橫向捲動顯示更多選單項目)</span>
           <nav class="main-menu" aria-label="主要選單">
             <ul>
               <li>
-                <nuxt-link
-                  id="ak-header"
-                  to="#ak-header"
-                  title="上方功能區塊"
-                  accesskey="U"
-                  name="ak-header"
-                >
+                <nuxt-link id="ak-header" to="#ak-header" title="上方功能區塊" accesskey="U" name="ak-header">
                   :::
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/sitemap" title="前往網站導覽" @click="handleToggleMobileMenuBtn"
-                  >網站導覽</nuxt-link
-                >
+                <nuxt-link to="/sitemap" title="前往網站導覽" @click="handleToggleMobileMenuBtn">網站導覽</nuxt-link>
               </li>
               <li>
-                <nuxt-link
-                  to="/nested-pages"
-                  title="前往巢狀頁面範例"
-                  @click="handleToggleMobileMenuBtn"
-                  >巢狀頁面範例</nuxt-link
-                >
+                <nuxt-link to="/nested-pages" title="前往巢狀頁面範例" @click="handleToggleMobileMenuBtn">巢狀頁面範例</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
@@ -90,6 +78,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 const mobileMenuStatus = ref<boolean>(false)
 const handleToggleMobileMenuBtn = () => {
   mobileMenuStatus.value = !mobileMenuStatus.value
@@ -97,6 +86,22 @@ const handleToggleMobileMenuBtn = () => {
 const handleCloseMobileMenuBtn = () => {
   mobileMenuStatus.value = false
 }
+const checkScrollable = ref<HTMLElement | null>(null)
+const scrollHint = ref()
+const checkTabAble = () => {
+  if (
+    checkScrollable.value!['scrollWidth'] > 0 &&
+    checkScrollable.value!['scrollWidth'] > checkScrollable.value!['clientWidth']
+  ) {
+    scrollHint.value = true
+  } else {
+    scrollHint.value = false
+  }
+}
+onMounted(() => {
+  checkTabAble()
+  window.addEventListener('resize', checkTabAble)
+})
 </script>
 
 <style scoped>
@@ -104,10 +109,10 @@ header {
   position: sticky;
   top: 0;
   background-color: oklch(var(--header-bg, var(--header-bg-default)) / 90%);
-  border-bottom: 1px solid
-    oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
+  border-bottom: 1px solid oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
   backdrop-filter: blur(0.25rem);
   z-index: 1;
+
   & #ak-jump {
     position: absolute;
     top: -1px;
@@ -115,27 +120,34 @@ header {
     font-size: 0.875rem;
     color: transparent;
     z-index: -1;
+
     &:focus-within {
       color: oklab(var(--skip-btn-color, var(--skip-btn-color-default)));
       background-color: oklab(var(--skip-btn-bg, var(--skip-btn-bg--default)));
       z-index: inherit;
     }
   }
+
   & .header-container {
     display: flex;
     align-items: center;
   }
+
   & .btn-mobile {
     display: none;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       display: block;
     }
   }
+
   & .logo {
     padding: 0 1rem 0 2rem;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       padding: 0 1rem;
     }
+
     & a {
       display: inline-block;
     }
@@ -145,11 +157,9 @@ header {
     flex: 1;
     white-space: nowrap;
     overflow: auto;
-    background: linear-gradient(
-        to right,
+    background: linear-gradient(to right,
         oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,
-        oklch(var(--color-black) / 0%)
-      ),
+        oklch(var(--color-black) / 0%)),
       linear-gradient(to right, oklch(var(--color-black) / 0%), oklch(var(--header-bg) / 90%) 70%),
       radial-gradient(farthest-side at 0 50%, oklch(var(--color-black) / 20%), transparent),
       radial-gradient(farthest-side at 100% 50%, oklch(var(--color-black) / 20%), transparent);
@@ -160,7 +170,8 @@ header {
 
     /* Opera doesn't support this in the shorthand */
     background-attachment: local, local, scroll, scroll;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -168,18 +179,23 @@ header {
       white-space: inherit;
     }
   }
+
   & .btn-open-mobile-menu {
     display: none;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       display: block;
     }
   }
+
   & .btn-close-mobile-menu {
     display: none;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       display: block;
     }
   }
+
   & .menu {
     display: flex;
     flex-wrap: nowrap;
@@ -187,7 +203,8 @@ header {
     align-items: center;
     gap: 1.5rem;
     padding: 1rem 0 1rem 2rem;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       display: block;
       position: fixed;
       top: 0;
@@ -203,26 +220,32 @@ header {
       transform: translate3d(0, 0, 0);
       transition: transform 300ms ease-out;
     }
+
     & ul {
       display: flex;
       gap: 1.5rem;
-      @media screen and (width <= 768px) {
+
+      @media screen and (width <=768px) {
         flex-direction: column;
       }
     }
+
     & a {
       display: inline-block;
     }
   }
+
   .menu--open {
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       box-shadow: var(--box-shadow);
       transform: translate3d(-100%, 0, 0);
     }
   }
+
   & .sub-menu {
     padding-right: 2rem;
-    @media screen and (width <= 768px) {
+
+    @media screen and (width <=768px) {
       padding-right: 0;
       padding-top: 1rem;
       padding-bottom: 2rem;

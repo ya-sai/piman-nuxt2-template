@@ -38,14 +38,16 @@
     <Meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <Link rel="shortcut icon" type="image/x-icon" href="/portfolio/favicon.ico" />
-    <!-- <Link rel="apple-touch-icon-precomposed" size="32x32" href="/portfolio/favicon-32.ico" /> -->
-    <!-- <Link rel="apple-touch-icon-precomposed" size="128x128" href="/portfolio/favicon-128.ico" /> -->
-    <!-- <Link rel="apple-touch-icon-precomposed" size="152x152" href="/portfolio/favicon-152.ico" /> -->
-    <!-- <Link rel="apple-touch-icon-precomposed" size="167x167" href="/portfolio/favicon-167.ico" /> -->
-    <!-- <Link rel="apple-touch-icon-precomposed" size="180x180" href="/portfolio/favicon-180.ico" /> -->
-    <!-- <Link rel="apple-touch-icon-precomposed" size="192x192" href="/portfolio/favicon-192.ico" /> -->
-    <!-- <Link rel="apple-touch-icon-precomposed" size="196x196" href="/portfolio/favicon-196.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="32x32" href="/portfolio/favicon-32.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="128x128" href="/portfolio/favicon-128.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="152x152" href="/portfolio/favicon-152.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="167x167" href="/portfolio/favicon-167.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="180x180" href="/portfolio/favicon-180.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="192x192" href="/portfolio/favicon-192.ico" /> -->
+    <!-- <Link rel="apple-touch-icon-precomposed" data-res="196x196" href="/portfolio/favicon-196.ico" /> -->
 
+    <!-- https://github.com/elegantapp/pwa-asset-generator/issues/71 -->
+    <!-- Deprecated media feature device-width -->
     <!-- <Link
       rel="apple-touch-startup-image"
       href="/portfolio/images/splash/splash-640x1136.png"
@@ -70,6 +72,10 @@
     <!-- <Link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <!-- <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /> -->
     <!-- <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swapm" /> -->
+
+    <!-- https://github.com/nuxt/nuxt/issues/19752 -->
+    <!-- Nuxt3  I don't think there's anything Nuxt can action related to this issue -->
+    <Script src="'/portfolio/js/clarity.js" />
 
     <Body class="wrapper">
       <div class="layout">

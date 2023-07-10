@@ -6,7 +6,7 @@
       </div>
     </div>
     <NuxtLayout name="default" aria-live="polite" :aria-busy="loading">
-      <NuxtPage />
+      <NuxtPage :key="$route.fullPath" />
     </NuxtLayout>
   </div>
 </template>

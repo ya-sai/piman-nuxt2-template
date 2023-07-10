@@ -1,14 +1,6 @@
 <template>
   <main class="page page--index">
-    <nuxt-link
-      id="ak-container"
-      to="#ak-container"
-      title="中央內容區塊"
-      accesskey="C"
-      name="ak-container"
-    >
-      :::
-    </nuxt-link>
+    <akContainer />
     <h2>{{ pageTitle }}</h2>
     <theEmptyContent>Empty</theEmptyContent>
   </main>

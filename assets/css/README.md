@@ -34,11 +34,11 @@ print 因為是獨立且不可被覆蓋，所以也是放後面。
 
 # 顏色
 
-使用 CSS4 的 oklch(x% x.x x.x / x%)，可以使用的色域更廣，也對 a11y 更好。  
-若瀏覽器支援 CSS5，則可能可以進一步使用 oklch(from x% x.x x.x l c h / x%) 計算與變化顏色（將需要調整的數值，取代 l、c、h 字母的），   
-以及在 oklch 裡使用 HEX，例如 oklch(#bbb)，  
+使用 CSS Color Module level 4 的 oklch(x% x.x x.x / x%)，可以使用的色域更廣，也對 a11y 更好。  
+若瀏覽器支援 CSS Color Module level 5，則可能可以進一步使用 oklch(from x% x.x x.x l c h / x%) 計算與變化顏色（將需要調整的數值，取代 l、c、h 字母的）以及在 oklch 裡使用 HEX，例如 oklch(#bbb)，  
 可以更方便統一管理顏色（到時需要更改 CSS 顏色變數值以及寫法修正），  
 建議在 Component 裡的 CSS Variables 預設值，也使用 CSS Variables 方式管理，  
+但目前在 CSS Variables 裡，只會寫 x% x.x x.x，這是因為 CSS Color Module level 5 還沒有獲得普遍支援，  
 也許現在會有點困擾，但為了日後銜接順利，建議大家遵守規範。  
 
 
@@ -73,3 +73,4 @@ print 因為是獨立且不可被覆蓋，所以也是放後面。
 # 特別注意
 
 因為 @media 不能使用 CSS Variables，故 breakpoint 請至 variables.css 裡參照使用真正的數值。  
+通常 breakpoint 也不太會變，所以可以就先這樣處理即可。  

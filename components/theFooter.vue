@@ -56,7 +56,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-footer">&copy; copyright</div>
+    <div class="footer-footer">&copy; 2023 copyright</div>
   </footer>
 </template>
 
