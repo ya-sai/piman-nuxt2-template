@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div class="footer-header">
-      <nuxt-link id="ak-footer" to="#ak-footer" title="下方功能區塊" accesskey="Z" name="ak-footer">
+      <a id="ak-footer" href="#ak-footer" title="下方功能區塊" accesskey="Z" name="ak-footer">
         :::
-      </nuxt-link>
+      </a>
     </div>
     <div class="footer-container">
       <div>

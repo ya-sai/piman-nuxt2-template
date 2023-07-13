@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nuxt-link id="ak-jump" to="#ak-container" title="跳至主要內容">跳至主要內容</nuxt-link>
+    <a id="ak-jump" href="#ak-container" title="跳至主要內容">跳至主要內容</a>
     <h1 class="visually-hidden">Website Name</h1>
     <div class="header-container">
       <div class="logo">
@@ -19,15 +19,27 @@
           <nav class="main-menu" aria-label="主要選單">
             <ul>
               <li>
-                <nuxt-link id="ak-header" to="#ak-header" title="上方功能區塊" accesskey="U" name="ak-header">
+                <a
+                  id="ak-header"
+                  href="#ak-header"
+                  title="上方功能區塊"
+                  accesskey="U"
+                  name="ak-header"
+                >
                   :::
-                </nuxt-link>
+                </a>
               </li>
               <li>
                 <nuxt-link to="/sitemap" title="前往網站導覽" @click="handleToggleMobileMenuBtn">網站導覽</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/nested-pages" title="前往巢狀頁面範例" @click="handleToggleMobileMenuBtn">巢狀頁面範例</nuxt-link>
+                <nuxt-link
+                  to="/nested-pages"
+                  title="前往巢狀頁面範例"
+                  @click="handleToggleMobileMenuBtn"
+                >
+                  巢狀頁面範例
+                </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
