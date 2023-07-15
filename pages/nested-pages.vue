@@ -5,7 +5,7 @@
     <NuxtPage />
     <ul>
       <li v-for="(itemm, index) in 50" :key="index">
-        <nuxt-link to="/">Item</nuxt-link>
+        <nuxt-link to="/">test scroll-padding-top</nuxt-link>
       </li>
     </ul>
   </main>

@@ -166,7 +166,6 @@ figcaption {
   background-color: oklch(var(--color-primary));
   color: oklch(var(--color-white));
   padding: 0.75rem 1.25rem;
-  border-radius: 2rem;
   &:hover {
     background-color: oklch(var(--color-primary) / 80%);
   }

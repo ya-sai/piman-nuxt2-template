@@ -22,7 +22,9 @@
           <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> 會跳至網頁中央區塊，以此類推。<br />
         </p>
         <p>
-          另外，如果您是 MAC 用戶，快速鍵的使用方法為<kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>快速鍵字母</kbd><br />
+          另外，如果您是 MAC 用戶，快速鍵的使用方法為<kbd>Control</kbd>+<kbd>Option</kbd>+<kbd
+            >快速鍵字母</kbd
+          ><br />
         </p>
         <p>若以上方式皆無法使用，建議可以檢查是不是有自訂的快速鍵影響。</p>
         <div
@@ -56,7 +58,8 @@
                 <td colspan="2"><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>快速鍵字母</kbd></td>
                 <td>
                   Firefox 57 版本以上: <kbd>Control</kbd> + <kbd>Option</kbd> +
-                  <kbd>快速鍵字母</kbd> 或 <kbd>Control</kbd> + <kbd>Alt</kbd> +<kbd>快速鍵字母</kbd><br />
+                  <kbd>快速鍵字母</kbd> 或 <kbd>Control</kbd> + <kbd>Alt</kbd> +<kbd>快速鍵字母</kbd
+                  ><br />
                   Firefox 14 版本以上: <kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>快速鍵字母</kbd>
                   <br />
                   Firefox 13 版本以下: <kbd>Control</kbd> + <kbd>快速鍵字母</kbd>
@@ -94,7 +97,10 @@
           <kbd>←</kbd> <kbd>→</kbd> 或 <kbd>↑</kbd> <kbd>↓</kbd>：按左右鍵或上下鍵移動標籤順序。
         </p>
         <p>
-          <kbd>Tab</kbd>：停留於該標籤後，可利用<kbd>Tab</kbd>鍵跳至內容瀏覽該筆資料，遇到單選按鈕(radio)時請配合使用<kbd>←</kbd>
+          <kbd>Tab</kbd
+          >：停留於該標籤後，可利用<kbd>Tab</kbd>鍵跳至內容瀏覽該筆資料，遇到單選按鈕(radio)時請配合使用<kbd
+            >←</kbd
+          >
           <kbd>→</kbd> 或 <kbd>↑</kbd> <kbd>↓</kbd>鍵移動項目順序。
         </p>
         <p>
@@ -165,13 +171,12 @@ const checkScrollable = ref<HTMLElement | null>(null)
 const tabIndex = ref()
 const checkTabAble = () => {
   if (
-    checkScrollable.value!['scrollWidth'] > 0 &&
-    checkScrollable.value!['scrollWidth'] > checkScrollable.value!['clientWidth']
+    checkScrollable.value!.scrollWidth > 0 &&
+    checkScrollable.value!.scrollWidth > checkScrollable.value!.clientWidth
   ) {
-    tabIndex.value = 0;
-  }
-  else {
-    tabIndex.value = null;
+    tabIndex.value = 0
+  } else {
+    tabIndex.value = null
   }
 }
 onMounted(() => {

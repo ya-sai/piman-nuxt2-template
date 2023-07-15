@@ -41,7 +41,7 @@
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/" title="XXX">XXX</nuxt-link>
+                <nuxt-link to="/screenshot" title="螢幕截圖">螢幕截圖</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
@@ -223,7 +223,8 @@ header {
       position: fixed;
       top: 0;
       left: 100%;
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       height: 100dvh;
       background-color: oklch(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
       padding: 1rem;
@@ -233,6 +234,10 @@ header {
       -webkit-overflow-scrolling: touch;
       transform: translate3d(0, 0, 0);
       transition: transform 300ms ease-out;
+    }
+
+    @media screen and (width <=375px) {
+      max-width: 90dvw;
     }
 
     & ul {
