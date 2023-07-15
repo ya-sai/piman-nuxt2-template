@@ -5,6 +5,7 @@
     <div class="header-container">
       <div class="logo">
         <nuxt-link to="/" title="前往首頁">
+          <span class="visually-hidden">回到網站首頁</span>
           <picture>
             <!-- <source media="(min-width: 768px)" srcset="/favicon.ico" /> -->
             <img class="logo-img" src="/favicon.ico" alt="" />
@@ -12,25 +13,23 @@
         </nuxt-link>
       </div>
       <div class="menubar" ref="checkScrollable">
-        <button class="btn-open-mobile-menu" @click="handleToggleMobileMenuBtn">選單</button>
+        <button type="button" class="btn-open-mobile-menu" @click="handleToggleMobileMenuBtn">
+          選單
+        </button>
         <div :class="['menu', mobileMenuStatus ? 'menu--open' : '']">
-          <button class="btn-close-mobile-menu" @click="handleCloseMobileMenuBtn">關閉選單</button>
+          <button type="button" class="btn-close-mobile-menu" @click="handleCloseMobileMenuBtn">
+            關閉選單
+          </button>
           <span class="visually-hidden" v-if="scrollHint">(橫向捲動顯示更多選單項目)</span>
           <nav class="main-menu" aria-label="主要選單">
             <ul>
               <li>
-                <a
-                  id="ak-header"
-                  href="#ak-header"
-                  title="上方功能區塊"
-                  accesskey="U"
-                  name="ak-header"
-                >
-                  :::
-                </a>
+                <a id="ak-header" href="#ak-header" title="上方功能區塊" accesskey="U"> ::: </a>
               </li>
               <li>
-                <nuxt-link to="/sitemap" title="前往網站導覽" @click="handleToggleMobileMenuBtn">網站導覽</nuxt-link>
+                <nuxt-link to="/sitemap" title="前往網站導覽" @click="handleToggleMobileMenuBtn"
+                  >網站導覽</nuxt-link
+                >
               </li>
               <li>
                 <nuxt-link
@@ -121,7 +120,8 @@ header {
   position: sticky;
   top: 0;
   background-color: oklch(var(--header-bg, var(--header-bg-default)) / 90%);
-  border-bottom: 1px solid oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
+  border-bottom: 1px solid
+    oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
   backdrop-filter: blur(0.25rem);
   z-index: 1;
 
@@ -169,9 +169,11 @@ header {
     flex: 1;
     white-space: nowrap;
     overflow: auto;
-    background: linear-gradient(to right,
+    background: linear-gradient(
+        to right,
         oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,
-        oklch(var(--color-black) / 0%)),
+        oklch(var(--color-black) / 0%)
+      ),
       linear-gradient(to right, oklch(var(--color-black) / 0%), oklch(var(--header-bg) / 90%) 70%),
       radial-gradient(farthest-side at 0 50%, oklch(var(--color-black) / 20%), transparent),
       radial-gradient(farthest-side at 100% 50%, oklch(var(--color-black) / 20%), transparent);

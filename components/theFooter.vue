@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer-header">
-      <a id="ak-footer" href="#ak-footer" title="下方功能區塊" accesskey="Z" name="ak-footer">
+      <a id="ak-footer" href="#ak-footer" title="下方功能區塊" accesskey="Z">
         :::
       </a>
     </div>
@@ -10,6 +10,7 @@
         <ul>
           <li>
             <nuxt-link to="/" title="前往首頁">
+              <span class="visually-hidden">回到網站首頁</span>
               <img class="logo-img" src="/favicon.ico" alt="" />
             </nuxt-link>
           </li>

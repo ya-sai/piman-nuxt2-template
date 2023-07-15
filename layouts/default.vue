@@ -86,7 +86,12 @@
         <slot />
         <TheFooter />
       </div>
-      <button v-show="scrollDistance > 300" class="btn-back-to-top" @click="scrollToTop">
+      <button
+        type="button"
+        v-show="scrollDistance > 300"
+        class="btn-back-to-top"
+        @click="scrollToTop"
+      >
         <span class="visually-hidden">捲動畫面至最上面</span>
         🔝
       </button>
