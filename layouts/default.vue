@@ -1,5 +1,5 @@
 <template>
-  <Html>
+  <Html lang="zh-Hant-TW" dir="ltr">
     <Meta charse="utf-8" />
     <Meta name="viewport" content="width=device-width, initial-scale=1" />
     <Meta hid="keywords" name="keywords" content="" />
@@ -86,6 +86,10 @@
         <slot />
         <TheFooter />
       </div>
+      <button v-show="scrollDistance > 300" class="btn-back-to-top" @click="scrollToTop">
+        <span class="visually-hidden">捲動畫面至最上面</span>
+        🔝
+      </button>
     </Body>
   </Html>
 </template>
@@ -99,6 +103,8 @@ useHead({
       : `${runtimeConfig.public.websiteName}`
   }
 })
+
+const { scrollToTop, scrollDistance } = useScrollToTop()
 </script>
 
 <style>
