@@ -25,6 +25,7 @@
     "vue-tsc": "^1.6.5"
   },
   "dependencies": {
-    "html2canvas": "^1.4.1"
+    "html2canvas": "^1.4.1",
+    "nuxt-swiper": "^1.2.0"
   }
 }

@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/html-validator'],
+  modules: ['@nuxtjs/html-validator', 'nuxt-swiper'],
   htmlValidator: {
     usePrettier: true
   },

@@ -44,7 +44,7 @@
                 <nuxt-link to="/screenshot" title="螢幕截圖">螢幕截圖</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/" title="XXX">XXX</nuxt-link>
+                <nuxt-link to="/swiper" title="Swiper">Swiper</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
@@ -89,7 +89,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 const mobileMenuStatus = ref<boolean>(false)
 const handleToggleMobileMenuBtn = () => {
   mobileMenuStatus.value = !mobileMenuStatus.value
