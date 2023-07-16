@@ -2,6 +2,23 @@
   <main class="page">
     <akContainer />
     <h2>{{ pageTitle }}</h2>
+    <nuxt-link
+      to="https://swiperjs.com/"
+      title="另開視窗前往swiper套件網站"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Swiper 官網
+    </nuxt-link>
+    <br />
+    <nuxt-link
+      to="https://nuxt.com/modules/swiper"
+      title="另開視窗前往Nuxt3 Swiper Module"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Nuxt3 Swiper Module
+    </nuxt-link>
     <Swiper
       style="height: 300px"
       :modules="[SwiperPagination, SwiperNavigation, SwiperKeyboard, SwiperA11y, SwiperFreeMode]"
@@ -22,6 +39,7 @@
       :observer="true"
       :grab-cursor="true"
       :slides-per-view="1"
+      :space-between="16"
       :breakpoints="{
         768: {
           slidesPerView: 2
