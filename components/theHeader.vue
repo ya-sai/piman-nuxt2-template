@@ -41,13 +41,19 @@
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/screenshot" title="螢幕截圖">螢幕截圖</nuxt-link>
+                <nuxt-link to="/screenshot" title="螢幕截圖" @click="handleToggleMobileMenuBtn">
+                  螢幕截圖
+                </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/swiper" title="Swiper">Swiper</nuxt-link>
+                <nuxt-link to="/swiper" title="Swiper" @click="handleToggleMobileMenuBtn">
+                  Swiper
+                </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/word-cloud" title="Word Cloud">Word Cloud</nuxt-link>
+                <nuxt-link to="/word-cloud" title="Word Cloud" @click="handleToggleMobileMenuBtn">
+                  Word Cloud
+                </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>
@@ -122,7 +128,7 @@ header {
   border-bottom: 1px solid
     oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
   backdrop-filter: blur(0.25rem);
-  z-index: 1;
+  z-index: 2;
 
   & #ak-jump {
     position: absolute;
