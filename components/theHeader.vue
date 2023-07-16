@@ -47,7 +47,7 @@
                 <nuxt-link to="/swiper" title="Swiper">Swiper</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/" title="XXX">XXX</nuxt-link>
+                <nuxt-link to="/word-cloud" title="Word Cloud">Word Cloud</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/" title="XXX">XXX</nuxt-link>

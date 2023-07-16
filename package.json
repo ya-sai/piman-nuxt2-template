@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
-    "nuxt-swiper": "^1.2.0"
+    "nuxt-swiper": "^1.2.0",
+    "vuewordcloud": "^19.0.0"
   }
 }
