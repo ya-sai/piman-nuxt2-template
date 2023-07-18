@@ -25,8 +25,13 @@
     "vue-tsc": "^1.6.5"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
     "html2canvas": "^1.4.1",
     "nuxt-swiper": "^1.2.0",
+    "pinia": "^2.1.4",
     "vuewordcloud": "^19.0.0"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
