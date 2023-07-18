@@ -19,74 +19,73 @@
   --breakpoint-1600: 1600px;
   --breakpoint-1920: 1920px;
 
-  @media (prefers-color-scheme: light) {
-    color-scheme: light;
-    /*
-      Theme Colors(oklch)
-      If oklch(from color-number l c h / alpha) can work:
-      1. change --color-primary to oklch(70% 0.1 188) and change other file.
-      2. delete --color-primary-modified
-      3. change oklch(var(--color-primary-modified)) to oklch(from var(--color-primary) l c h / 40%)
-    */
-    --color-primary: 70% 0.1 188;
-    --color-primary-modified: 90% 0.1 188;
-    --color-success: 79.21% 0.153 117.53;
-    --color-warning: 70% 0.222 41.29;
-    --color-danger: 56.18% 0.227 24.35;
-    --color-visited: 51% 0.2 283.95;
-    
-    /* Outline */
-    --outline-color: 83% 0.17 82.04;
+  /*
+    Theme Colors(oklch)
+    If oklch(from color-number l c h / alpha) can work:
+    1. change --color-primary to oklch(70% 0.1 188) and change other file.
+    2. delete --color-primary-modified
+    3. change oklch(var(--color-primary-modified)) to oklch(from var(--color-primary) l c h / 40%)
+  */
+  --color-primary: 70% 0.1 188;
+  --color-primary-modified: 90% 0.1 188;
+  --color-success: 79.21% 0.153 117.53;
+  --color-warning: 70% 0.222 41.29;
+  --color-danger: 56.18% 0.227 24.35;
+  --color-visited: 51% 0.2 283.95;
+  
+  /* Outline */
+  --outline-color: 83% 0.17 82.04;
 
-    /* Border */
-    --border-color: 79.21% 0 0;
+  /* Border */
+  --border-color: 79.21% 0 0;
 
-     /* link */
-     --link-color: var(--color-primary);
+    /* link */
+    --link-color: var(--color-primary);
 
-    /* Box-shadow */
-    --box-shadow: 0 0.75rem 1.125rem oklch(var(--color-black) / 15%);
+  /* Box-shadow */
+  --box-shadow: 0 0.75rem 1.125rem oklch(var(--color-black) / 15%);
 
-    /* Wrapper */
-    --wrapper-bg: var(--color-white);
-    --wrapper-color: var(--color-black);
+  /* Wrapper */
+  --wrapper-bg: var(--color-white);
+  --wrapper-color: var(--color-black);
 
-    /* Header */
-    --header-bg: var(--color-white);
-    --header-border-color: var(--border-color);
-    --skip-btn-color: var(--color-white);
-    --skip-btn-bg: var(--color-black);
-    --header-bg-default: 100% 0 0;
-    --header-border-color-default: 79.21% 0 0;
-    --skip-btn-color-default: 100% 0 0;
-    --skip-btn-bg--default: 24.78% 0 0;
-    --menubar-mobile-bg-default: 24.78% 0 0;
+  /* Header */
+  --header-bg: var(--color-white);
+  --header-border-color: var(--border-color);
+  --skip-btn-color: var(--color-white);
+  --skip-btn-bg: var(--color-black);
+  --header-bg-default: 100% 0 0;
+  --header-border-color-default: 79.21% 0 0;
+  --skip-btn-color-default: 100% 0 0;
+  --skip-btn-bg--default: 24.78% 0 0;
+  --menubar-mobile-bg-default: 24.78% 0 0;
 
-    /* Menu */
-    --menubar-mobile-bg: var(--color-white);
+  /* Menu */
+  --menubar-mobile-bg: var(--color-white);
 
-    /* Footer */
-    --footer-bg: var(--color-black);
-    --footer-color: var(--color-white);
-    --footer-link-color: var(--color-white);
-    --footer-border-color: var(--border-color);
-    --footer-bg-default: 24.78% 0 0;
-    --footer-color-default: 100% 0 0;
-    --footer-link-color-default: 100% 0 0;
-    --footer-border-color-default: 79.21% 0 0;
+  /* Footer */
+  --footer-bg: var(--color-black);
+  --footer-color: var(--color-white);
+  --footer-link-color: var(--color-white);
+  --footer-border-color: var(--border-color);
+  --footer-bg-default: 24.78% 0 0;
+  --footer-color-default: 100% 0 0;
+  --footer-link-color-default: 100% 0 0;
+  --footer-border-color-default: 79.21% 0 0;
 
-    /* Empty Block */
-    --empty-block-border-color: var(--color-primary);
-    --empty-block-border-color-default: 79.21% 0 0;
+  /* Empty Block */
+  --empty-block-border-color: var(--color-primary);
+  --empty-block-border-color-default: 79.21% 0 0;
 
-    /* Table */
-    --table-bg: var(--color-white);
+  /* Table */
+  --table-bg: var(--color-white);
 
-    /* noscript */
-    --noscript-bg: var(--color-white);
-  }
+  /* noscript */
+  --noscript-bg: var(--color-white);
+}
 
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+  :root {
     color-scheme: dark;
     /*
       Theme Colors(oklch)
