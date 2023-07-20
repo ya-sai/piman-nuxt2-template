@@ -7,29 +7,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from '@nuxtjs/composition-api'
-
-export default defineComponent({
-  setup(_, {root}) {
-
-    const menuDropdown1 = ref("");
-    const menuDropdownOptions1 =  [
-      { 
-        type: "link",
-        url: "/sitemap",
-        label: "平台介紹" 
-      },
-    ]
-
-    return {
-      menuDropdown1, menuDropdownOptions1
-    }
-  },
-})
-</script>
-
-
 <style lang="scss" scoped>
   .container {
     text-align: center;
