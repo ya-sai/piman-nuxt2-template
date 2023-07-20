@@ -4,18 +4,11 @@
     <h1>Welcome to Paprika!</h1>
     <p>This is a nuxt template of piman.</p>
     <p>Hope you enjoy it!</p>
-    <bpa-button theme="primary">Button</bpa-button>
-    <bpa-dropdown
-      v-model="menuDropdown1"
-      :options="menuDropdownOptions1"
-      placeholder="產品數位履歷"
-    />
-
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, watch } from '@nuxtjs/composition-api'
+import { defineComponent, ref } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   setup(_, {root}) {
