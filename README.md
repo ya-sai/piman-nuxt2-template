@@ -10,7 +10,7 @@ A Nuxt3 template of Piman(開發中)
 
 - Copy and paste  
 - npm ci  
-- npx nuxi dev  
+- npm run dev  
 
 
 ## Version and License  

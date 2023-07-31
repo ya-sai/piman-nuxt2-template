@@ -80,7 +80,7 @@ footer {
     & a {
       text-decoration: underline;
       text-decoration-style: dotted;
-      color: oklch(var(--footer-link-color, var(--footer-link-color-default)));
+      color: var(--footer-link-color, var(--footer-link-color-default));
     }
   }
   & .footer-footer {

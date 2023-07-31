@@ -175,8 +175,8 @@ header {
     overflow: auto;
     background: linear-gradient(
         to right,
-        oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,
-        oklch(var(--color-black) / 0%)
+        rgba(var(--header-bg, var(--header-bg-default)), 0.9) 30%,
+        rgba(var(--color-black), 0)
       ),
       linear-gradient(to right, rgba(var(--color-black), 0), rgba(var(--header-bg), 0.9) 70%),
       radial-gradient(farthest-side at 0 50%, rgba(var(--color-black), 0.2), transparent),
@@ -230,7 +230,7 @@ header {
       width: 100%;
       max-width: 300px;
       height: 100dvh;
-      background-color: oklch(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
+      background-color: var(--menubar-mobile-bg, var(--menubar-mobile-bg-default));
       padding: 1rem;
       overflow: auto;
       scroll-behavior: smooth;
