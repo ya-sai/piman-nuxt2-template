@@ -34,6 +34,8 @@ print 因為是獨立且不可被覆蓋，所以也是放後面。
 
 # 顏色
 
+目前仍先採用 CSS 3 Color function 寫法，待 CSS Color Module level 5 支援時，建議使用 oklch。
+
 使用 CSS Color Module level 4 的 oklch(x% x.x x.x / x%)，可以使用的色域更廣，也對 a11y 更好。  
 若瀏覽器支援 CSS Color Module level 5，則可能可以進一步使用 oklch(from x% x.x x.x l c h / x%) 計算與變化顏色（將需要調整的數值，取代 l、c、h 字母的）以及在 oklch 裡使用 HEX，例如 oklch(#bbb)，  
 可以更方便統一管理顏色（到時需要更改 CSS 顏色變數值以及寫法修正），  

@@ -3,19 +3,19 @@
 *************************/
 
 .color-primary {
-  color: oklch(var(--color-primary));
+  color: var(--color-primary);
 }
 
 .color-success {
-  color: oklch(var(--color-success));
+  color: var(--color-success);
 }
 
 .color-warning {
-  color: oklch(var(--color-warning));
+  color: var(--color-warning);
 }
 
 .color-danger {
-  color: oklch(var(--color-danger));
+  color: var(--color-danger);
 }
 
 

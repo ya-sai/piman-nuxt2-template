@@ -124,9 +124,8 @@ onMounted(() => {
 header {
   position: sticky;
   top: 0;
-  background-color: oklch(var(--header-bg, var(--header-bg-default)) / 90%);
-  border-bottom: 1px solid
-    oklch(var(--header-border-color, var(--header-border-color-default)) / 30%);
+  background-color: rgba(var(--header-bg, var(--header-bg-default)), 0.9);
+  border-bottom: 1px solid rgba(var(--header-border-color, var(--header-border-color-default)), 0.3);
   backdrop-filter: blur(0.25rem);
   z-index: 2;
 
@@ -179,9 +178,9 @@ header {
         oklch(var(--header-bg, var(--header-bg-default)) / 90%) 30%,
         oklch(var(--color-black) / 0%)
       ),
-      linear-gradient(to right, oklch(var(--color-black) / 0%), oklch(var(--header-bg) / 90%) 70%),
-      radial-gradient(farthest-side at 0 50%, oklch(var(--color-black) / 20%), transparent),
-      radial-gradient(farthest-side at 100% 50%, oklch(var(--color-black) / 20%), transparent);
+      linear-gradient(to right, rgba(var(--color-black), 0), rgba(var(--header-bg), 0.9) 70%),
+      radial-gradient(farthest-side at 0 50%, rgba(var(--color-black), 0.2), transparent),
+      radial-gradient(farthest-side at 100% 50%, rgba(var(--color-black), 0.2), transparent);
     background-position: left center, right center, left center, right center;
     background-repeat: no-repeat;
     background-color: transparent;

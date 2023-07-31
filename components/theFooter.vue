@@ -63,8 +63,8 @@
 
 <style scoped>
 footer {
-  background-color: oklch(var(--footer-bg, var(--footer-bg-default)));
-  color: oklch(var(--footer-color, var(--footer-color-default)));
+  background-color: var(--footer-bg, var(--footer-bg-default));
+  color: var(--footer-color, var(--footer-color-default));
   & .footer-container {
     display: flex;
     justify-content: space-around;
@@ -86,8 +86,7 @@ footer {
   & .footer-footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-top: 1px solid
-      oklch(var(--footer-border-color, var(--footer-border-color-default)) / 30%);
+    border-top: 1px solid rgba(var(--footer-border-color, var(--footer-border-color-default)), 0.3);
     text-align: center;
   }
 }
