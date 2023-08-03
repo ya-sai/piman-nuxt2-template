@@ -23,8 +23,8 @@ body {
 
 .wrapper {
   overflow-x: hidden;
-  background-color: var(--wrapper-bg);
-  color: var(--wrapper-color);
+  background-color: rgb(var(--wrapper-bg));
+  color: rgb(var(--wrapper-color));
 }
 
 h1,
@@ -68,7 +68,7 @@ h6 {
 }
 
 a {
-  color: var(--link-color);
+  color: rgb(var(--link-color));
   transition: opacity 160ms ease-in;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
@@ -80,15 +80,15 @@ a {
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px var(--outline-color);
+    box-shadow: 0 0 0 3px rgb(var(--outline-color));
   }
   &:visited {
-    color: var(--color-visited);
+    color: rgb(var(--color-visited));
   }
   &[role="button"] {
     text-decoration: none;
     &[aria-current="page"] {
-      box-shadow: 0 0 0 3px var(--outline-color);
+      box-shadow: 0 0 0 3px rgb(var(--outline-color));
     }
   }
 }
@@ -98,25 +98,25 @@ p {
 }
 
 table {
-  border-top: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
+  border-top: 1px solid rgb(var(--border-color));
+  border-left: 1px solid rgb(var(--border-color));
   width: 100%;
-  background-color: oklab(var(--table-bg));
+  background-color: rgb(var(--table-bg));
   & th {
     padding: 0.5rem 1rem;
     font-weight: bold;
-    border-right: 1px solid var(--border-color);
-    background-color: var(--color-primary-modified);
+    border-right: 1px solid rgb(var(--border-color));
+    background-color: rgb(var(--color-primary-modified));
     word-break: break-word;
     @media screen and (width <= 768px) {
       padding: 0.25rem 0.5rem;
     }
   }
   & tr {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid rgb(var(--border-color));
   }
   & td {
-    border-right: 1px solid var(--border-color);
+    border-right: 1px solid rgb(var(--border-color));
     padding: 0.5rem 1rem;
     word-break: break-word;
     @media screen and (width <= 768px) {
@@ -129,7 +129,7 @@ kbd {
   display: inline-block;
   vertical-align: top;
   margin: 0 0.125rem 0.5rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgb(var(--border-color));
   padding: 0 0.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.5rem rgba(var(--color-black), 0.15);
@@ -163,14 +163,14 @@ figcaption {
 *************************/
 
 [class^="btn"] {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-white));
   padding: 0.75rem 1.25rem;
   &:hover {
     background-color: rgba(var(--color-primary), 0.8);
   }
   &:focus-within {
-    box-shadow: 0 0 0 4px var(--outline-color);
+    box-shadow: 0 0 0 4px rgb(var(--outline-color));
   }
 }
 
@@ -186,8 +186,8 @@ figcaption {
   color: transparent;
   z-index: -1;
   &:focus-within {
-    color: oklab(var(--skip-btn-color, var(--skip-btn-color-default)));
-    background-color: oklab(var(--skip-btn-bg, var(--skip-btn-bg--default)));
+    color: rgb(var(--skip-btn-color, var(--skip-btn-color-default)));
+    background-color: rgb(var(--skip-btn-bg, var(--skip-btn-bg--default)));
     z-index: inherit;
   }
 }
@@ -197,7 +197,7 @@ figcaption {
   top: 1rem;
   left: calc(50% - 150px);
   width: 300px;
-  background-color: var(--noscript-bg);
+  background-color: rgb(var(--noscript-bg));
   border-radius: 0.25rem;
   padding: 1rem;
   box-shadow: 0 0.25rem 1rem rgba(var(--color-black), 0.12);
@@ -228,7 +228,7 @@ figcaption {
     border: 1rem solid var(--color-white);
     box-shadow: 0.25rem 0.25rem 2rem rgba(var(--color-black), 0.15), inset 0 0.25rem 1rem rgba(var(--color-black), 0.15);
     border-radius: 50%;
-    border-top: 1rem solid var(--color-primary);
+    border-top: 1rem solid rgb(var(--color-primary));
     width: 4rem;
     height: 4rem;
     margin: 0 auto;
@@ -254,7 +254,7 @@ figcaption {
   padding: 0;
   font-size: 2rem;
   color: transparent;  
-  text-shadow: 0 0 0 var(--color-white);
+  text-shadow: 0 0 0 rgb(var(--color-white));
 }
 
 .page {

@@ -1,9 +1,9 @@
 :root {
 
   /* Base Colors */
-  --color-black: #212121;
-  --color-white: #fff;
-  --color-gray: #484848;
+  --color-black: 33, 33, 33;
+  --color-white: 255, 255, 255;
+  --color-gray: 72, 72, 72;
 
    /* Font */
    --font-size-base: 1rem;
@@ -22,18 +22,18 @@
   /*
     Theme Colors
   */
-  --color-primary: #44b2aa;
-  --color-primary-modified: #8af4ea;
-  --color-success: #b4c847;
-  --color-warning: #ff6824;
-  --color-danger: #db0127;
-  --color-visited: #5f49d2;
+  --color-primary: 68, 178, 170;
+  --color-primary-modified: 138, 244, 234;
+  --color-success: 180, 200, 71;
+  --color-warning: 255, 104, 36;
+  --color-danger: 219, 1, 39;
+  --color-visited: 95, 73, 210;
   
   /* Outline */
-  --outline-color: #feba08;
+  --outline-color: 254, 186, 8;
 
   /* Border */
-  --border-color: #bbbbbb;
+  --border-color: 187, 187, 187;
 
   /* link */
   --link-color: var(--color-primary);
@@ -47,6 +47,7 @@
 
   /* Header */
   --header-bg: var(--color-white);
+  --header-bg-reverse: var(--color-black);
   --header-border-color: var(--border-color);
   --skip-btn-color: var(--color-white);
   --skip-btn-bg: var(--color-black);
@@ -84,31 +85,32 @@
   :root {
     color-scheme: dark;
     
-    --color-primary: #44b2aa;
-    --color-primary-modified: #030303;
-    --color-success: #b4c847;
-    --color-warning: #ff6824;
-    --color-danger: #db0127;
-    --color-visited: #cecece;
+    --color-primary: 68, 178, 170;
+    --color-primary-modified: 3, 3, 3;
+    --color-success: 180, 200, 71;
+    --color-warning: 255, 104, 36;
+    --color-danger: 219, 1, 39;
+    --color-visited: 206, 206, 206;
     
     /* Outline */
-    --outline-color: #feba08
+    --outline-color: 254, 186, 8;
 
     /* Border */
-    --border-color: #484848;
+    --border-color: 72, 72, 72;
 
     /* link */
-    --link-color: #eee;
+    --link-color: 238, 238, 238;
 
     /* Box-shadow */
     --box-shadow: 0 0.75rem 1.125rem rgba(var(--color-white) 0.15);
 
     /* Wrapper */
     --wrapper-bg: var(--color-black);
-    --wrapper-color: var(--color-visited)
+    --wrapper-color: var(--color-visited);
 
     /* Header */
     --header-bg: var(--color-black);
+    --header-bg-reverse: var(--color-white);
     --header-border-color: var(--border-color);
     --skip-btn-color: var(--color-white);
     --skip-btn-bg: var(--color-black);

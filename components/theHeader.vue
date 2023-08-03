@@ -138,8 +138,8 @@ header {
     z-index: -1;
 
     &:focus-within {
-      color: oklab(var(--skip-btn-color, var(--skip-btn-color-default)));
-      background-color: oklab(var(--skip-btn-bg, var(--skip-btn-bg--default)));
+      color: rgb(var(--skip-btn-color, var(--skip-btn-color-default)));
+      background-color: rgb(var(--skip-btn-bg, var(--skip-btn-bg--default)));
       z-index: inherit;
     }
   }
@@ -176,11 +176,11 @@ header {
     background: linear-gradient(
         to right,
         rgba(var(--header-bg, var(--header-bg-default)), 0.9) 30%,
-        rgba(var(--color-black), 0)
+        rgba(var(--header-bg-reverse), 0)
       ),
-      linear-gradient(to right, rgba(var(--color-black), 0), rgba(var(--header-bg), 0.9) 70%),
-      radial-gradient(farthest-side at 0 50%, rgba(var(--color-black), 0.2), transparent),
-      radial-gradient(farthest-side at 100% 50%, rgba(var(--color-black), 0.2), transparent);
+      linear-gradient(to right, rgba(var(--header-bg-reverse), 0), rgba(var(--header-bg), 0.9) 70%),
+      radial-gradient(farthest-side at 0 50%, rgba(var(--header-bg-reverse), 0.2), transparent),
+      radial-gradient(farthest-side at 100% 50%, rgba(var(--header-bg-reverse), 0.2), transparent);
     background-position: left center, right center, left center, right center;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -230,7 +230,7 @@ header {
       width: 100%;
       max-width: 300px;
       height: 100dvh;
-      background-color: var(--menubar-mobile-bg, var(--menubar-mobile-bg-default));
+      background-color: rgb(var(--menubar-mobile-bg, var(--menubar-mobile-bg-default)));
       padding: 1rem;
       overflow: auto;
       scroll-behavior: smooth;

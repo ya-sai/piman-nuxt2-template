@@ -3,19 +3,19 @@
 *************************/
 
 .color-primary {
-  color: var(--color-primary);
+  color: rgb(var(--color-primary));
 }
 
 .color-success {
-  color: var(--color-success);
+  color: rgb(var(--color-success));
 }
 
 .color-warning {
-  color: var(--color-warning);
+  color: rgb(var(--color-warning));
 }
 
 .color-danger {
-  color: var(--color-danger);
+  color: rgb(var(--color-danger));
 }
 
 

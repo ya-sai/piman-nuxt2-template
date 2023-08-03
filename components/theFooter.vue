@@ -63,8 +63,8 @@
 
 <style scoped>
 footer {
-  background-color: var(--footer-bg, var(--footer-bg-default));
-  color: var(--footer-color, var(--footer-color-default));
+  background-color: rgb(var(--footer-bg, var(--footer-bg-default)));
+  color: rgb(var(--footer-color, var(--footer-color-default)));
   & .footer-container {
     display: flex;
     justify-content: space-around;
@@ -80,7 +80,7 @@ footer {
     & a {
       text-decoration: underline;
       text-decoration-style: dotted;
-      color: var(--footer-link-color, var(--footer-link-color-default));
+      color: rgb(var(--footer-link-color, var(--footer-link-color-default)));
     }
   }
   & .footer-footer {
