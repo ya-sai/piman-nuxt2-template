@@ -15,8 +15,8 @@
 
 一般被視為 global 的 css，請寫入 ui.css 或 @import 到 ui layer。  
 
-Component 一般來說是不應該被更動且獨立的，所以 Component 的 css 應該被放入到 /component 自己的檔案或資料夾裡，非必要請不要建立一個 component 的＠layer。  
-除非是打包時，Component 裡的 CSS 沒有應用到，這時才把它搬到 ＠layer。  
+Component 一般來說是不應該被更動且獨立的，所以 Component 的 css 應該被放入到 /components 自己的檔案或資料夾裡，非必要請不要建立一個 components 的＠layer。  
+除非是打包時，Component 裡的 CSS 沒有應用到，這時才把它搬到 ＠layer(components)。  
 
 另外請注意寫在 Component 的 CSS Variables 需有預設值，以防沒有設定 CSS Variables，  
 也就是說，Component 的 CSS Variables 預設值，避免再使用 CSS Variables 代替，才能達到獨立性以及重用性。  
@@ -34,7 +34,7 @@ print 因為是獨立且不可被覆蓋，所以也是放後面。
 
 # 顏色
 
-目前仍先採用 CSS 3 Color function 寫法，待 CSS Color Module level 5 支援時，建議使用 oklch。
+目前仍先採用 CSS 3 寫法，待 CSS Color Module level 5 支援時，建議使用 oklch。
 
 使用 CSS Color Module level 4 的 oklch(x% x.x x.x / x%)，可以使用的色域更廣，也對 a11y 更好。  
 若瀏覽器支援 CSS Color Module level 5，則可能可以進一步使用 oklch(from x% x.x x.x l c h / x%) 計算與變化顏色（將需要調整的數值，取代 l、c、h 字母的）以及在 oklch 裡使用 HEX，例如 oklch(#bbb)，  

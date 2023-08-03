@@ -6,11 +6,34 @@ A Nuxt3 template of Piman(開發中)
 
 [node.js version link](https://nodejs.org/zh-tw/download/releases/)  
 
+
 ## How to use  
 
 - Copy and paste  
 - npm ci  
 - npm run dev  
+
+
+## Including   
+
+- vuewordcloud  
+- html2canvas    
+- nuxt-swiper  
+- @pinia/nuxt   
+- @nuxt/devtools  
+
+
+## Recommend  
+
+- @nuxtjs/i18n  
+- @vite-pwa/nuxt    
+
+
+##  Maybe...
+
+- GTM (or GA4 + Microsoft Clarity + ...)
+- Map
+- Chart
 
 
 ## Version and License  

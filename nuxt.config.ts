@@ -1,12 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxtjs/html-validator', 'nuxt-swiper', '@pinia/nuxt'],
+
   htmlValidator: {
     usePrettier: true
   },
+
   imports: {
     dirs: ['stores']
   },
+
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL || 'http://localhost:3000',
@@ -14,7 +17,12 @@ export default defineNuxtConfig({
       websiteDescription: process.env.WEBSITE_DESCRIPTION || '網站描述'
     }
   },
+
   typescript: {
     typeCheck: true
+  },
+
+  devtools: {
+    enabled: true
   }
 })

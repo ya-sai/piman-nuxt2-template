@@ -13,6 +13,7 @@
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
+    "@nuxt/devtools": "^0.7.4",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/html-validator": "^1.5.1",
     "@types/node": "^18",
