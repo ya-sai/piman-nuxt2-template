@@ -39,7 +39,7 @@
   --link-color: var(--color-primary);
 
   /* Box-shadow */
-  --box-shadow: 0 0.75rem 1.125rem rgba(var(--color-black) 0.15);
+  --box-shadow: 0 0.75rem 1.125rem rgba(var(--color-black), 0.15);
 
   /* Wrapper */
   --wrapper-bg: var(--color-white);
@@ -102,7 +102,7 @@
     --link-color: 238, 238, 238;
 
     /* Box-shadow */
-    --box-shadow: 0 0.75rem 1.125rem rgba(var(--color-white) 0.15);
+    --box-shadow: 0 0.75rem 1.125rem rgba(var(--color-white), 0.15);
 
     /* Wrapper */
     --wrapper-bg: var(--color-black);

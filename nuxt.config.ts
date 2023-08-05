@@ -1,5 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+const config = {
   modules: ['@nuxtjs/html-validator', 'nuxt-swiper', '@pinia/nuxt'],
 
   htmlValidator: {
@@ -28,15 +27,10 @@ export default defineNuxtConfig({
     }
   },
 
-  // CORS
+  // dev CORS
   // vite: {
   //   server: {
-  //     proxy: {
-  //       '/Path': {
-  //         target: 'https://Domain',
-  //         changeOrigin: true
-  //       }
-  //     }
+  //     proxy: {}
   //   }
   // },
 
@@ -47,4 +41,17 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   }
-})
+}
+
+// if (process.env.NODE_ENV === 'development') {
+//   // dev CORS
+//   config.vite.server.proxy = {
+//     '/Path': {
+//       target: 'Domain',
+//       changeOrigin: true
+//     }
+//   }
+// }
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig(config)
