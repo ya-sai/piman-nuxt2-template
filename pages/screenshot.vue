@@ -8,3 +8,12 @@
 <script setup lang="ts">
 const { loadingScreenshotImg, screenshot, handleScreenshot } = useHtml2canvas()
 </script>
+
+<style scoped>
+img {
+  width: 90%;
+  height: auto;
+  margin: 4rem auto;
+  border: 1px solid #bbb;
+}
+</style>
