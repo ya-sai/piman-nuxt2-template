@@ -6,10 +6,12 @@ export default defineNuxtConfig({
     usePrettier: true
   },
 
+  // pinia folder
   imports: {
     dirs: ['stores']
   },
 
+  // 環境騙術
   runtimeConfig: {
     public: {
       baseUrl: '',
@@ -19,11 +21,24 @@ export default defineNuxtConfig({
   },
 
   devServer: {
+    // https
     https: {
       key: './https/localhost+3-key.pem',
       cert: './https/localhost+3.pem'
     }
   },
+
+  // CORS
+  // vite: {
+  //   server: {
+  //     proxy: {
+  //       '/Path': {
+  //         target: 'https://Domain',
+  //         changeOrigin: true
+  //       }
+  //     }
+  //   }
+  // },
 
   typescript: {
     typeCheck: true
