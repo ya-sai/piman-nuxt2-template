@@ -12,6 +12,7 @@ const config = {
 
   // 環境騙術
   runtimeConfig: {
+    env: '',
     public: {
       baseUrl: '',
       websiteName: '',
