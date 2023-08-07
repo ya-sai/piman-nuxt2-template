@@ -2,7 +2,7 @@
   <main class="page">
     <akContainer />
     <h2>{{ pageTitle }}</h2>
-    <article>
+    <div class="page-container">
       <section>
         <h3>網站區塊與快捷鍵</h3>
         <p>
@@ -117,7 +117,7 @@
           </li>
         </ul>
       </section>
-    </article>
+    </div>
   </main>
 </template>
 
