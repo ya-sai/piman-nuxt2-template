@@ -1,6 +1,6 @@
 # Paprika
 
-A Nuxt template of Piman  
+A Nuxt template of Piman Vue2  
 
 ![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/Nuxt/2.x/green) ![image](https://badgen.net/badge/Piman/1.x/green)  ![image](https://badgen.net/badge/nodejs/v18/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange)
 
