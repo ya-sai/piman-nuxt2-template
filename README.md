@@ -1,4 +1,4 @@
-# Paprika
+# Piman-nuxt2-template（注意：此版本已停止開發！）
 
 A Nuxt template of Piman Vue2  
 
@@ -34,6 +34,3 @@ scss/
 ├── style.scss
 
 
-## Version
-
-Follow [Piman](https://github.com/ya-sai/piman)
